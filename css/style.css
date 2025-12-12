@@ -12,7 +12,7 @@ list-style:none;
 
 /* ======================= ヘッダー */
 .back0{
-  background-image: url(../image/back0.jpg);
+  background-image: url(back0.jpg);
   color: #00f; /* 文字色を青色（#00f）に */
 }
 /* ======================= ヘッダー */
@@ -59,4 +59,5 @@ th, td {
 }
 .table13 tr:nth-child(4n+3){
   background-color: #eee;
+
 }
