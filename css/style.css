@@ -1,0 +1,62 @@
+@charset "utf-8";
+* {
+margin:0; /* 謎の余白がなくなる裏技 */
+padding:0;
+list-style:none;
+}
+
+/* レイアウト */
+.align-center{
+  text-align: center;
+}
+
+/* ======================= ヘッダー */
+.back0{
+  background-image: url(../image/back0.jpg);
+  color: #00f; /* 文字色を青色（#00f）に */
+}
+/* ======================= ヘッダー */
+
+/* ======================= フッター */
+footer{
+/*width:430px;*/
+  border-top:2px solid #aeaeae;
+  font-size: 18px;
+}
+/* ======================= フッター */
+
+body {
+  margin: 0;
+}
+#title {
+  margin-top: 0;
+}
+.main-menu{
+  list-style: none;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size:3rem;
+  
+}
+.main-menu li{
+  border-bottom: 1px solid #c9c2bc;
+  padding: 1rem;
+}
+.main-menu a{
+  display: block;
+  text-size-adjust: 4px;
+}
+.main-menu a:hover{
+  color: #0bd;
+}
+.info{
+  padding: 0 1.5rem;
+}
+th, td {
+  padding: 0.5em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.table13 tr:nth-child(4n+3){
+  background-color: #eee;
+}
