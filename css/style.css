@@ -1,42 +1,178 @@
 @charset "utf-8";
 * {
-margin:0; /* 謎の余白がなくなる裏技 */
-padding:0;
-list-style:none;
+  margin:0; /* 謎の余白がなくなる裏技 */
+  padding:0;
+  list-style:none;
 }
 
 /* レイアウト */
 .align-center{
   text-align: center;
 }
+.middle {
+  /*真ん中の要素*/
+  padding: 20px 10px; /* 上下に20px 左右に10pxの余白(内側) */
+}
 
-/* ======================= ヘッダー */
-.back0{
-  background-image: url(back0.jpg);
+
+h2 {
+  font-size: 30px;
+}
+
+/* スマホ向け（画面幅が600px以下） */
+@media (max-width: 600px) {
+  body {
+  font-family: "メイリオ", YuMincho, serif;
+  margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
+  max-width: 430px;
+  background-color: #fff;
+/*   padding: .5rem 1rem 6rem 1rem; */
+  font-size: 14px;
+  color: #333;
+  }
+}
+
+/* タブレット向け（画面幅が601pxから900px iPadmini4は768px） */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+  font-family: "メイリオ", YuMincho, serif;
+  margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
+  max-width: 700px;
+  background-color: #fff;
+/*   padding: .5rem 1rem 6rem 1rem; */
+  font-size: 14px;
+  color: #333;
+  }
+}
+
+/* PC向け（画面幅が901px以上） */
+@media (min-width: 901px) {
+  body {
+  font-family: "メイリオ", YuMincho, serif;
+  margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
+  max-width: 1100px;
+  background-color: #fff;
+/*   padding: .5rem 1rem 6rem 1rem; */
+  font-size: 26px;
+  color: #333;
+  }
+}
+
+/* ======================= 背景色,画像 */
+.black {
+/*  width: 430px; /* SE3は370px、15plusは430px */
+  background-color: #000; /* 背景色を黒色（#000）に */
+  color: #fff; /* 背景色を白色（#fff）に */
+}
+.blue {
+/*  width: 430px; /* SE3は370px、15plusは430px */
+  background-color: #d4f1fd; /* 背景色を水色（#d4f1fd）に */
+  color: #00f; /* 文字色を青（#00f）に */
+}
+.bluepurple {
+  background-color: #87a5ff; /* 背景色を青紫色（#87a5ff）に */
+  color: #ffffde; /* 文字色を薄黄色（#ffffde）に */
+}
+.cream{
+  background-color: #ffffde; /* 背景色を薄い黄色（#ffffde）に */
   color: #00f; /* 文字色を青色（#00f）に */
 }
+.cyan{
+  background-color: #d4f1fd; /* 背景色をシアン色（#d4f1fd）に */
+  color: #00f; /* 文字色を青色（#00f）に */
+}
+.gray{
+  background-color: #f5f5f5; /* 背景色を薄い灰色（#f5f5f5）に */
+  color: #00f; /* 文字色を青色（#00f）に */
+}
+.yellow{
+  background-color: #F0d24b; /* 背景色を黄色（#F0d24b）に */
+  color: #00f; /* 文字色を青色（#00f）に */
+}
+.white{
+  background-color: #FFF; /* 背景色を白色（#FFF）に */
+  color: #000; /* 文字色を黒色（#000）に */
+}
+.image0{
+  background-image: url(../image/back0.jpg);
+  background-repeat: repeat-x;
+}
+
+/* ======================= 画像サイズ */
+.img_100p {
+  width: 100%;
+  height: 100%;
+  padding: 4px 0px;
+  margin :0 auto; /* 中央寄せ */
+  display : block; /* ブロック要素に変換 */
+}
+.img_80p {
+  width: 80%;
+  height: 80%;
+  padding: 4px;  
+  margin :0 auto; /* 中央寄せ */
+  display : block; /* ブロック要素に変換 */
+}
+.img_60p {
+  width: 60%;
+  height: 60%;
+  padding: 4px;  
+  margin :0 auto; /* 中央寄せ */
+  display : block; /* ブロック要素に変換 */
+}
+	.img_40p {
+width: 40%;
+height: 40%;
+padding: 4px;
+margin :0 auto; /* 中央寄せ */
+display : block; /* ブロック要素に変換 */
+}
+.img_20p {
+width: 20%;
+height: 20%;
+padding: 4px;
+margin :0 auto; /* 中央寄せ */
+display : block; /* ブロック要素に変換 */
+}
+.img_icon {
+  width: 40px;
+  height: 40px;
+  padding: 4px;  
+  margin :0 auto; /* 中央寄せ */
+  display : block; /* ブロック要素に変換 */
+}
+
+/* ======================= パンくずリスト */
+.breadcrumb {
+  height: 34px;
+  line-height: 34px;
+  padding: 0;
+  font-size: 24px;
+  border-bottom:2px solid #aeaeae;
+}
+.breadcrumb li {
+  display: inline
+}
+.breadcrumb li::after {
+  content: " / ";
+}
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
 /* ======================= ヘッダー */
+header{
+  height: 80px;
+  line-height: 80px;
+  color: #00f; /* 文字色を青色（#00f）に */
+  font-size: 24px;
+}
 
-/* ======================= フッター */
-footer{
-/*width:430px;*/
-  border-top:2px solid #aeaeae;
-  font-size: 18px;
-}
-/* ======================= フッター */
-
-body {
-  margin: 0;
-}
-#title {
-  margin-top: 0;
-}
+/* ======================= メイン */
 .main-menu{
   list-style: none;
   text-align: center;
-  margin-bottom: 4rem;
   font-size:3rem;
-  
 }
 .main-menu li{
   border-bottom: 1px solid #c9c2bc;
@@ -49,15 +185,14 @@ body {
 .main-menu a:hover{
   color: #0bd;
 }
-.info{
-  padding: 0 1.5rem;
-}
 th, td {
-  padding: 0.5em;
+  padding: 0.5rem;
   border: 1px solid #ddd;
   text-align: left;
 }
-.table13 tr:nth-child(4n+3){
-  background-color: #eee;
-
+/* ======================= フッター */
+footer{
+/*width:430px;*/
+  border-top:2px solid #aeaeae;
+  font-size: 18px;
 }
