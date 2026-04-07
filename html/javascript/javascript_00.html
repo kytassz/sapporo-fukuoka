@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV読み込みサンプル</title>
+</head>
+<body>
+    <h1>CSVファイル読み込み</h1>
+
+    <!-- ファイル選択用のinput要素 -->
+    <input type="file" id="csvFile" accept=".csv" />
+    <button onclick="loadCSV()">CSVを読み込む</button>
+
+    <!-- 読み込み結果を表示するエリア -->
+    <div id="result"></div>
+
+    <script>
+        function loadCSV() {
+            const fileInput = document.getElementById('csvFile');
+            const file = fileInput.files[0]; // 選択されたファイルを取得
+
+            // ファイルが選択されているかチェック
+            if (!file) {
+                alert('CSVファイルを選択してください');
+                return;
+            }
+
+            // FileReaderオブジェクトを作成
+            const reader = new FileReader();
+
+            // ファイル読み込み完了時の処理を設定
+            reader.onload = function(e) {
+                const csvData = e.target.result; // CSVの内容（文字列）
+                console.log('読み込んだCSVデータ:', csvData);
+
+                // CSVデータを行ごとに分割
+                const lines = csvData.split('\\n');
+                let html = '<table border="1"><tr>';
+
+                // 1行目をヘッダーとして処理
+                if (lines.length > 0) {
+                    const headers = lines[0].split(',');
+                    headers.forEach(header => {
+                        html += `<th>${header.trim()}</th>`;
+                    });
+                    html += '</tr>';
+
+                    // 2行目以降をデータとして処理
+                    for (let i = 1; i < lines.length; i++) {
+                        if (lines[i].trim() !== '') { // 空行をスキップ
+                            html += '<tr>';
+                            const cells = lines[i].split(',');
+                            cells.forEach(cell => {
+                                html += `<td>${cell.trim()}</td>`;
+                            });
+                            html += '</tr>';
+                        }
+                    }
+                }
+
+                html += '</table>';
+                document.getElementById('result').innerHTML = html;
+            };
+
+            // エラーハンドリング
+            reader.onerror = function() {
+                alert('ファイルの読み込みに失敗しました');
+            };
+
+            // ファイルをテキストとして読み込み開始
+            reader.readAsText(file, 'UTF-8');
+        }
+    </script>
+</body>
+</html>
