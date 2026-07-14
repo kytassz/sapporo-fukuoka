@@ -13,7 +13,9 @@
   /*真ん中の要素*/
   padding: 20px 10px; /* 上下に20px 左右に10pxの余白(内側) */
 }
-
+table {
+  width: 100%;
+}
 
 h2 {
   font-size: 30px;
@@ -24,7 +26,7 @@ h2 {
   body {
   font-family: "メイリオ", YuMincho, serif;
   margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
-  max-width: 430px;
+  max-width: 600px;
   background-color: #fff;
 /*   padding: .5rem 1rem 6rem 1rem; */
   font-size: 14px;
@@ -188,6 +190,19 @@ header{
 th, td {
   padding: 0.5rem;
   border: 1px solid #ddd;
+  text-align: left;
+}
+#test-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#test-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#test-table th, #test-table td {
+  border: 1px solid #000;
+  padding: 8px;
   text-align: left;
 }
 /* ======================= フッター */
