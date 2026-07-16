@@ -100,21 +100,21 @@ body {
 }
 .img_80p {
   width: 80%;
-  height: 80%;
+height: auto;
   padding: 4px;  
   margin :0 auto; /* 中央寄せ */
   display : block; /* ブロック要素に変換 */
 }
 .img_60p {
   width: 60%;
-  height: 60%;
+height: auto;
   padding: 4px;  
   margin :0 auto; /* 中央寄せ */
   display : block; /* ブロック要素に変換 */
 }
 	.img_40p {
 width: 40%;
-height: 40%;
+height: auto;
 padding: 4px;
 margin :0 auto; /* 中央寄せ */
 display : block; /* ブロック要素に変換 */
@@ -159,7 +159,13 @@ header{
   color: #00f; /* 文字色を青色（#00f）に */
   font-size: 24px;
 }
-
+@media (max-width: 600px) {
+  header {
+    height: auto;
+    line-height: normal;
+    padding: 10px;
+  }
+}
 /* ======================= メイン */
 .main-menu{
   list-style: none;
@@ -182,18 +188,11 @@ th, td {
   border: 1px solid #ddd;
   text-align: left;
 }
-#test-table {
-  width: 100%;
-  border-collapse: collapse;
+.table-scroll {
+  overflow-x: auto;
 }
-#test-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-#test-table th, #test-table td {
-  border: 1px solid #000;
-  padding: 8px;
-  text-align: left;
+table {
+  min-width: 600px;
 }
 /* ======================= フッター */
 footer{
