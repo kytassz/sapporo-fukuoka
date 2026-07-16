@@ -19,42 +19,32 @@ h2 {
   font-size: 30px;
 }
 
-/* スマホ向け（画面幅が600px以下） */
-@media (max-width: 600px) {
-  body {
+body {
   font-family: "メイリオ", YuMincho, serif;
-  margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
-  max-width: 430px;
+  margin: 0 auto;
   background-color: #fff;
-/*   padding: .5rem 1rem 6rem 1rem; */
   font-size: 14px;
   color: #333;
+}
+
+/* スマホ向け（画面幅が600px以下 iPhone15Plusは430px） */
+@media (max-width: 600px) {
+  body {
+  max-width: 430px;
   }
 }
 
 /* タブレット向け（画面幅が601pxから900px iPadmini4は768px） */
 @media (min-width: 601px) and (max-width: 900px) {
   body {
-  font-family: "メイリオ", YuMincho, serif;
-  margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
   max-width: 700px;
-  background-color: #fff;
-/*   padding: .5rem 1rem 6rem 1rem; */
-  font-size: 14px;
-  color: #333;
   }
 }
 
 /* PC向け（画面幅が901px以上） */
 @media (min-width: 901px) {
   body {
-  font-family: "メイリオ", YuMincho, serif;
-  margin: 0 auto 0 auto; /* 上 | 右 | 下 | 左 */
   max-width: 1400px;
-  background-color: #fff;
-/*   padding: .5rem 1rem 6rem 1rem; */
-  font-size: 26px;
-  color: #333;
   }
 }
 
@@ -120,7 +110,7 @@ h2 {
   margin :0 auto; /* 中央寄せ */
   display : block; /* ブロック要素に変換 */
 }
-	.img_40p {
+.img_40p {
 width: 40%;
 height: 40%;
 padding: 4px;
