@@ -46,7 +46,7 @@ body {
 /* PC向け（画面幅が901px以上） */
 @media (min-width: 901px) {
   body {
-  max-width: 1400px;
+  max-width: 1100px;
   }
 }
 
