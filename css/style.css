@@ -134,6 +134,32 @@ display : block; /* ブロック要素に変換 */
   display : block; /* ブロック要素に変換 */
 }
 
+/* ======================= ヘッダー＋パンくず */
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+/* ヘッダー */
+.header {
+    text-align: center;
+    border-bottom: 2px solid #aeaeae;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.header a {
+    text-decoration: none;
+}
+
 /* ======================= パンくずリスト */
 .breadcrumb {
   height: 34px;
@@ -150,21 +176,6 @@ display : block; /* ブロック要素に変換 */
 }
 .breadcrumb li:last-child::after {
   content: "";
-}
-
-/* ======================= ヘッダー */
-header{
-  height: 80px;
-  line-height: 80px;
-  color: #00f; /* 文字色を青色（#00f）に */
-  font-size: 24px;
-}
-@media (max-width: 600px) {
-  header {
-    height: auto;
-    line-height: normal;
-    padding: 10px;
-  }
 }
 /* ======================= メイン */
 .main-menu{
@@ -192,9 +203,26 @@ th, td {
   overflow-x: auto;
 }
 table {
-  min-width: 600px;
+    width: 100%;
+    table-layout: fixed;
 }
-/* ======================= フッター */
+table th {
+    position: sticky;
+    top: 100px;
+    z-index: 10;
+    background-color: #ffffde;
+    text-align: center;
+}
+table td {
+    text-align: right;
+}
+table td:first-child {
+    text-align: left;
+}
+.red-bold {
+    color: red;
+    font-weight: bold;
+}
 /* ======================= フッター */
 .footer {
   text-align: center;
