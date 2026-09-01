@@ -196,10 +196,6 @@ display : block; /* ブロック要素に変換 */
 }
 
 .table-wrapper {
-    overflow-x: auto;
-}
-
-.table-wrapper {
     width: 100%;
 }
 
@@ -209,14 +205,9 @@ table {
     border-collapse: collapse;
 }
 
-table th,
-table td {
+table th {
     padding: 0.6rem;
     border: 1px solid #ddd;
-    font-size: 13px;
-}
-
-table th {
     position: sticky;
     top: 100px;
     z-index: 10;
@@ -225,22 +216,14 @@ table th {
 }
 
 table td {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
     text-align: right;
     font-size: 10px;
 }
 
 table td:first-child {
     text-align: left;
-
-  }table thead {
-    position: sticky;
-    top: 80px;
-    z-index: 10;
-}
-
-table thead th {
-    background-color: #ffffde;
-    text-align: center;
 }
 /* ======================= フッター */
 .footer {
