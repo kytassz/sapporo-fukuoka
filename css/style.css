@@ -194,18 +194,28 @@ display : block; /* ブロック要素に変換 */
 .main-menu a:hover{
   color: #0bd;
 }
-th, td {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  text-align: left;
+
+.table-wrapper {
+    overflow-x: auto;
 }
-.table-scroll {
-  overflow-x: auto;
+
+.table-wrapper {
+    overflow-x: auto;
 }
+
 table {
+    min-width: 800px;
     width: 100%;
     table-layout: fixed;
+    border-collapse: collapse;
 }
+
+table th,
+table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
 table th {
     position: sticky;
     top: 100px;
@@ -213,15 +223,24 @@ table th {
     background-color: #ffffde;
     text-align: center;
 }
+
 table td {
     text-align: right;
+    font-size: 10px;
 }
+
 table td:first-child {
     text-align: left;
+
+  }table thead {
+    position: sticky;
+    top: 80px;
+    z-index: 10;
 }
-.red-bold {
-    color: red;
-    font-weight: bold;
+
+table thead th {
+    background-color: #ffffde;
+    text-align: center;
 }
 /* ======================= フッター */
 .footer {
