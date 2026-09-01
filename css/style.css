@@ -200,11 +200,10 @@ display : block; /* ブロック要素に変換 */
 }
 
 .table-wrapper {
-    overflow-x: auto;
+    width: 100%;
 }
 
 table {
-    min-width: 800px;
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
@@ -212,8 +211,9 @@ table {
 
 table th,
 table td {
-    padding: 0.5rem;
+    padding: 0.6rem;
     border: 1px solid #ddd;
+    font-size: 13px;
 }
 
 table th {
