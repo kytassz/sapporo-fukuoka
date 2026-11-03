@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="css/ress.min.css">
+<link rel="stylesheet" href="css/style.css">
+<title>「Ｋ・Ｙ」ポートフォリオサイト</title>
+</head>
+<body id="top">
+<!-- ヘッダー -->
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/icon.png" alt="SAMPLE SITE"></a></h1>
+
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
+  <ul>
+    <li><a href="index.html">プロフィール</a></li>
+    <li><a href="gallery.html">作品事例</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+  <ul>
+    <li><a href="index.html">プロフィール</a></li>
+    <li><a href="gallery.html">作品事例</a></li>
+  </ul>
+</nav>
+<div id="contents">
+
+<!-- メイン -->
+<div id="main">
+
+<section>
+<h3 id="question01">
+  問1<br>
+  a = {"apple",&nbsp;"orange",&nbsp;"orange",&nbsp;"grape"}<br>
+  print(a)<br>
+  を実行したときに出てくるものは次のうちどれか。
+</h3>
+<ol>
+  <li>['orenge',&nbsp;'apple',&nbsp;'grape']</li>
+  <li>{'orenge',&nbsp;'apple',&nbsp;'apple',&nbsp;'grape'}</li>
+  <li>{'orenge',&nbsp;'apple',&nbsp;'grape'}</li>
+  <li>エラーになる</li>
+</ol>
+<a href="#answer01">答え</a>
+
+<h3 id="question02">
+問2<br>
+words = "Python"<br>
+for&nbsp;word in words:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print(word)<br>
+を実行したときに出てくるものは次のうちどれか。
+</h3>
+<ol>
+  <li>P<br>y<br>t<br>h<br>o<br>n</li>
+  <li>Python</li>
+  <li>word</li>
+  <li>エラーになる</li>
+</ol>
+<a href="#answer02">答え</a>
+
+<h3 id="question03">
+問3<br>
+次の結果を得たい場合、コードの2行目以降を代替するものとして正しいものはどれか。<br>
+<br>
+[ 実行結果 ]<br>
+OK<br>
+<br>
+[コード]<br>
+x = "yes"<br>
+【A】<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print("OK")
+</h3>
+<ol>
+  <li>if x is ("y", "ye", "yes"):</li>
+  <li>if x or ("y", "ye", "yes"):</li>
+  <li>if x on ("y", "ye", "yes"):</li>
+  <li>if x in ("y", "ye", "yes"):</li>
+</ol>
+<a href="#answer03">答え</a>
+
+<h3 id="question04">
+問4<br>
+次のコードでfruits[:]と同様なのはどれか。<br>
+<br>
+[コード]<br>
+fruits = ['orange', 'apple', 'pear']<br>
+A = fruits[:]
+</h3>
+<ol>
+  <li>fruits.sort()</li>
+  <li>fruits.reverse()</li>
+  <li>fruits.pop()</li>
+  <li>fruits.copy()</li>
+</ol>
+<a href="#answer04">答え</a>
+
+<h3 id="question05">
+問5<br>
+次のコードの出力として正しいものは？<br>
+<br>
+[コード]<br>
+import random<br>
+print(random.random())
+</h3>
+<ol>
+  <li>1.34128403526515394</li>
+  <li>-1</li>
+  <li>0.19057026371671748</li>
+  <li>エラーになる</li>
+</ol>
+<a href="#answer05">答え</a>
+
+<h3 id="question06">
+問6<br>
+from os import * という記述は推奨されない。その理由はどれか。
+</h3>
+<ol>
+  <li>Pythonでは</li>
+  <li>組み込み関数 open() が os.open() で遮蔽されてしまうから。</li>
+</ol>
+<a href="#answer06">答え</a>
+
+<h3 id="question07">
+問7<br>
+現在の日時を取得するコードを作りたい。【A】に入るコードはどれか。<br>
+<br>
+[コード]<br>
+from 【A】 import datetime<br>
+print(datetime.now())
+</h3>
+<ol>
+  <li>datetime</li>
+  <li>date</li>
+  <li>now</li>
+  <li>time</li>
+</ol>
+<a href="#answer07">答え</a>
+
+<h3 id="question08">
+問8<br>
+次のコードを実行したときに表示されるのはどれか。<br>
+<br>
+[コード]<br>
+class color:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def __init__(self):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.list = []<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;def add(self, val):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.list.append(val)<br>
+<br>
+A = color()<br>
+B = color()<br>
+A.add('red')<br>
+B.add('yellow')<br>
+A.add('blue')<br>
+print(A.list)
+</h3>
+<ol>
+  <li>['red']</li>
+  <li>['red', 'blue']</li>
+  <li>['red', 'yellow', 'blue']</li>
+  <li>エラーが出る</li>
+</ol>
+<a href="#answer08">答え</a>
+
+<h3 id="question09">
+問9<br>
+ログを取得するためのモジュールはどれか。
+</h3>
+<ol>
+  <li>history</li>
+  <li>logging</li>
+  <li>log</li>
+  <li>io</li>
+</ol>
+<a href="#answer09">答え</a>
+
+<h3 id="question10">
+問10<br>
+次のコードを実行したときに表示されるのはどれか。<br>
+<br>
+[コード]<br>
+numbers = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]<br>
+numbers.sort(key=lambda dic: dic[1])<br>
+<br>
+print(numbers)
+</h3>
+<ol>
+  <li>[(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]</li>
+  <li>[(4, 'four'), (3, 'three'), (2, 'two'), (1, 'one')]</li>
+  <li>[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]</li>
+  <li>エラーになる</li>
+</ol>
+<a href="#answer10">答え</a>
+
+<p id="answer01">
+  問1<br>
+  答え：3<br>
+  {'orenge', 'apple', 'grape'}<br>
+  <a href="#question01">↑</a>
+</p>
+
+<p id="answer02">
+  問2<br>
+  答え：1<br>
+  P<br>y<br>t<br>h<br>o<br>n<br>
+  <a href="#question02">↑</a>
+</p>
+
+<p id="answer03">
+  問3<br>
+  答え：4<br>
+  if x in ("y", "ye", "yes")<br>
+  <a href="#question03">↑</a>
+</p>
+
+<p id="answer04">
+  問4<br>
+  答え：4<br>
+  fruits.copy()<br>
+  <a href="#question04">↑</a>
+</p>
+
+<p id="answer05">
+  問5<br>
+  答え：3<br>
+  0.19057026371671748<br>
+  <a href="#question05">↑</a><br>
+  #random()メソッドは0.0以上1.0未満の浮動小数点数を選ぶ。
+</p>
+
+<p id="answer06">
+  問6<br>
+  答え：2<br>
+  組み込み関数 open() が os.open() で遮蔽されてしまうから。<br>
+  <a href="#question06">↑</a>
+</p>
+
+<p id="answer07">
+  問7<br>
+  答え：1<br>
+  datetime<br>
+  <a href="#question07">↑</a>
+</p>
+
+<p id="answer08">
+  問8<br>
+  答え：2<br>
+  ['red', 'blue']<br>
+  <a href="#question08">↑</a>
+</p>
+
+<p id="answer09">
+  問9<br>
+  答え：2<br>
+  logging<br>
+  <a href="#question09">↑</a>
+</p>
+
+<p id="answer10">
+  問10<br>
+  答え：3<br>
+  [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]<br>
+  #dic[1]の1は第二要素を示し、これを昇順にする。<br>
+  <a href="#question10">↑</a>
+</p>
+
+</section>
+
+</div>
+<!--/main-->
+
+<div id="sub">
+
+<div class="box1 c">
+	<h2>お問い合わせ</h2>
+<p>お問い合わせは
+<strong class="color1"><font size="2.5px">(非公開中)</font></strong><br>
+へお気軽にどうぞ</p>
+</div>
+
+</div>
+<!--/sub-->
+
+<p id="pagetop"><a href="#">↑</a></p>
+
+</div>
+<!--/contents-->
+
+<footer>
+<small>Copyright&copy; <a href="index.html">ｋ・ｙ</a> All Rights Reserved.</small>
+</footer>
+
+</div>
+<!--/container-->
+
+</body>
+</html>
